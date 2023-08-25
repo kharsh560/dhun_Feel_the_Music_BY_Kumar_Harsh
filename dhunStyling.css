@@ -164,6 +164,16 @@ body {
         border-style: solid;
         border-color: black;
     }
+    .songList {
+        font-size: xx-large;
+        font-weight: bolder;
+        color: bisque;
+        cursor: pointer;
+    }
+    .songList p:active {
+        color: rgb(9, 212, 199);
+        transform:translateY(4px);
+    }
     .stylingForPhone {
         padding-left: 10px;
     }
@@ -177,10 +187,7 @@ body {
     .posterToSquare {
         width: 200px;
     }
-    .songList p:active {
-        color: rgb(9, 255, 0);
-        transform:translateY(4px);
-    }
+    
 }
 
 /* ########################## Third & last section which is player section ########################## */
@@ -247,20 +254,20 @@ body {
         display: flex;
         align-items: center;
         position: relative;
-        bottom: 7vh;
+        bottom: 6vh;
     }
 
     .aboutPlayer {
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         height: 5vh;
     }
 
     .playerButton {
         padding: 0 5px;
-        height: 18px;
-        width: 18px;
+        height: 35px;
+        width: 35px;
         border: 1px;
         border-style: solid;
         border-color: black;
