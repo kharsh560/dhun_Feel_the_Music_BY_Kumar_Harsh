@@ -3,147 +3,272 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    height: 100vh;
     
 }
-.navigationBar {
-    background-color: rgb(78, 76, 76);
-    height: 7vh;
-    margin: auto;
-    width: 100vw;
-}
-.navBarUl {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    /* margin: auto; */
-    padding: 0;
-    margin: 0;
-    height: 7vh;    /* Here I needed to look at the developer tools to rectify the problem that 
-    the li were not able to align centered */
+
+/* ########################## Top most section that is navigation bar is this ########################## */
+@media (min-width: 1140px) {
+    .navigationBar {
+        background-color: rgb(78, 76, 76);
+        height: 7vh;
+        margin: auto;
+        width: 100vw;
+    }
+    .navBarUl {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* margin: auto; */
+        padding: 0;
+        margin: 0;
+        height: 7vh;    /* Here I needed to look at the developer tools to rectify the problem that 
+        the li were not able to align centered */
+    }
+    .dhunBrandLogo {
+        height: 35px;
+        width: 35px;
+    }
+    .branding {
+        color: white;
+        font-weight: bolder;
+        font-size: xx-large;
+        padding-left: 2px;
+        cursor: default;  /*Using cursor: default, the cursor wont convert into text bar when we hover onto it*/ 
+    }
+    nav ul li {
+        padding: 0 10px;
+        color: aliceblue;
+    }  /* {nav ul li} its targetting the same elements as this => {#navButtons} */
+    #navButtons {
+        cursor: pointer;
+    }
+    #navButtons:active {
+        color: red;
+        transform:translateY(4px);
+    }
 }
 
+@media (max-width: 1139px) {
+    .navigationBar {
+        background-color: rgb(78, 76, 76);
+        height: 7vh;
+        margin: auto;
+        width: 100vw;
+    }
+    .navBarUl {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* margin: auto; */
+        padding: 0;
+        margin: 0;
+        height: 7vh;    /* Here I needed to look at the developer tools to rectify the problem that 
+        the li were not able to align centered */
+    }
+    .dhunBrandLogo {
+        height: 35px;
+        width: 35px;
+    }
+    .branding {
+        color: white;
+        font-weight: bolder;
+        font-size: xx-large;
+        padding-left: 2px;
+        cursor: default;  /*Using cursor: default, the cursor wont convert into text bar when we hover onto it*/ 
+    }
+    nav ul li {
+        padding: 0 10px;
+        color: aliceblue;
+    } 
+    #navButtons:active {
+        color: red;
+        transform:translateY(4px);
+    }
+}
 
-.dhunBrandLogo {
-    height: 35px;
-    width: 35px;
-}
-.branding {
-    color: white;
-    font-weight: bolder;
-    font-size: xx-large;
-    padding-left: 2px;
-    cursor: default;  /*Using cursor: default, the cursor wont convert into text bar when we hover onto it*/ 
-}
-nav ul li {
-    padding: 0 10px;
-    color: aliceblue;
-}  /* {nav ul li} its targetting the same elements as this => {#navButtons} */
-#navButtons {
-    cursor: pointer;
-}
-#navButtons:active {
-    color: red;
-    transform:translateY(4px);
-}
-.songsContainer {
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 100vh;
+/* ########################## Second section which is massive one is Songs Display Section ########################## */
+
+@media (min-width: 1140px) {
+    .songsContainer {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    .songAlbum {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        border: 1px;
+        border-style: solid;
+        border-color: black;
+    }
+    .songAlbum:hover {
+        /* opacity: 0.7; */
+        transform: translateY(-8px);
+        background-color: black;
+    }
+    .songList {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        cursor: pointer;
+    }
+    h4 {
+        cursor: default;
+    }
+    .aboutAlbum p {
+        cursor: default;
+    }
+    hr {
+        width: 120px;
+    }
+    .songList p {
+        margin: 3px;
+    }
+    .songList p:active {
+        color: rgb(9, 255, 0);
+        transform:translateY(4px);
+    }
+    .songMoviePoster {
+        height: 200px;
+        width: 150px;
+    }
+    .posterToSquare {
+        width: 200px;
+    }
+    h4 {
+        margin-bottom: 0;
+    }
     
 }
-.songAlbum {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-}
-.songAlbum:hover {
-    /* opacity: 0.7; */
-    transform: translateY(-8px);
-    background-color: black;
-}
-.songList {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    cursor: pointer;
-}
-h4 {
-    cursor: default;
-}
-.aboutAlbum p {
-    cursor: default;
-}
-hr {
-    width: 120px;
-}
-.songList p {
-    margin: 3px;
-}
-.songList p:active {
-    color: rgb(9, 255, 0);
-    transform:translateY(4px);
-}
-.songMoviePoster {
-    height: 200px;
-    width: 150px;
-}
-.posterToSquare {
-    width: 200px;
-}
-h4 {
-    margin-bottom: 0;
-}
-.bottomMostContainer {
-    height: 5vh;
-    width: 100vw;
-    background-color: black;
-    position: fixed;
-    top: 95vh
-}
-.aboutPlayer {
-    height: 10vh; /*I needed to adjust the height along with position's Top height!*/
-    width: 100vw;
-    background: rgb(195,192,192);
-    background: linear-gradient(180deg, rgba(195,192,192,1) 0%, rgba(205,202,202,1) 21%, rgba(167,164,164,1) 34%, rgba(118,118,120,1) 47%, rgba(68,68,70,1) 70%, rgba(0,0,0,1) 100%);
-    position: fixed;
-    top: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.playerButton {
-    padding: 0 5px;
-    height: 40px;
-    width: 40px;
-    border: 3px;
-    border-style: solid;
-    border-color: black;
-    /* margin-top: 8px; */
-    cursor: pointer;
-}
-.playerButton:active { /*Using this simple psuedo class, I have created the click effect!!*/
-    height: 20px;
-    width: 20px;
+
+@media (max-width: 1139px) {
+    .songsContainer {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .songAlbum {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 10px;
+        border: 1px;
+        border-style: solid;
+        border-color: black;
+    }
+    .stylingForPhone {
+        padding-left: 10px;
+    }
+    .songAlbum h4 {
+        padding: 0 10px;
+    }
+    .songMoviePoster {
+        height: 200px;
+        width: 150px;
+    }
+    .posterToSquare {
+        width: 200px;
+    }
+    .songList p:active {
+        color: rgb(9, 255, 0);
+        transform:translateY(4px);
+    }
 }
 
-#myProgressBar {
-    width: 100vw;
-    height: 5vh;
-    display: flex;
-    align-items: center;
+/* ########################## Third & last section which is player section ########################## */
+
+
+@media(min-width: 1140px) {
+    .bottomMostContainer {
+        height: 5vh;
+        width: 100vw;
+        background-color: black;
+        position: fixed;
+        top: 95vh
+    }
+    .aboutPlayer {
+        height: 10vh; /*I needed to adjust the height along with position's Top height!*/
+        width: 100vw;
+        background: rgb(195,192,192);
+        background: linear-gradient(180deg, rgba(195,192,192,1) 0%, rgba(205,202,202,1) 21%, rgba(167,164,164,1) 34%, rgba(118,118,120,1) 47%, rgba(68,68,70,1) 70%, rgba(0,0,0,1) 100%);
+        position: fixed;
+        top: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .playerButton {
+        padding: 0 5px;
+        height: 40px;
+        width: 40px;
+        border: 3px;
+        border-style: solid;
+        border-color: black;
+        /* margin-top: 8px; */
+        cursor: pointer;
+    }
+    .playerButton:active { /*Using this simple psuedo class, I have created the click effect!!*/
+        height: 20px;
+        width: 20px;
+    }
+    
+    #myProgressBar {
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+    }
+    /* .musicPlayingBar {
+        background-color: black;
+        height: 5vh;
+        width: 200px;
+        position: absolute;
+        bottom: 0px;
+    } */
 }
-/* .musicPlayingBar {
-    background-color: black;
-    height: 5vh;
-    width: 200px;
-    position: absolute;
-    bottom: 0px;
-} */
+
+@media (max-width: 1139px) {
+    .bottomMostContainer {
+        height: 5vh;
+        width: 100vw;
+        background-color: grey;
+    }
+
+    #myProgressBar {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        position: relative;
+        bottom: 7vh;
+    }
+
+    .aboutPlayer {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 5vh;
+    }
+
+    .playerButton {
+        padding: 0 5px;
+        height: 18px;
+        width: 18px;
+        border: 1px;
+        border-style: solid;
+        border-color: black;
+        /* margin-top: 8px; */
+        cursor: pointer;
+    }
+    .playerButton:active { /*Using this simple psuedo class, I have created the click effect!!*/
+        height: 7px;
+        width: 7px;
+    }
+}
