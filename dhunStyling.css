@@ -229,8 +229,8 @@ body {
     
     .playerButton {
         padding: 0 5px;
-        height: 40px;
-        width: 40px;
+        height: 20px;
+        width: 20px;   /* Decreased the size of Playerbuttons, as, with increased size, these buttons were not working properly! */
         /* border: 3px; */
         border-style: solid;
         border-color: black;
@@ -238,8 +238,8 @@ body {
         cursor: pointer;
     }
     .playerButton:active { /*Using this simple psuedo class, I have created the click effect!!*/
-        height: 20px;
-        width: 20px;
+        height: 10px;
+        width: 10px;
     }
     
     #myProgressBar {
