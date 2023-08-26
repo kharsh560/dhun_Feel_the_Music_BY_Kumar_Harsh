@@ -40,11 +40,11 @@ body {
     nav ul li {
         padding: 0 10px;
         color: aliceblue;
-    }  /* {nav ul li} its targetting the same elements as this => {#navButtons} */
-    #navButtons {
+    }  /* {nav ul li} its targetting the same elements as this => {.navButtons} */
+    .navButtons {
         cursor: pointer;
     }
-    #navButtons:active {
+    .navButtons:active {
         color: red;
         transform:translateY(4px);
     }
@@ -83,7 +83,7 @@ body {
         padding: 0 10px;
         color: aliceblue;
     } 
-    #navButtons:active {
+    .navButtons:active {
         color: red;
         transform:translateY(4px);
     }
@@ -231,7 +231,7 @@ body {
         padding: 0 5px;
         height: 40px;
         width: 40px;
-        border: 3px;
+        /* border: 3px; */
         border-style: solid;
         border-color: black;
         /* margin-top: 8px; */
@@ -244,9 +244,11 @@ body {
     
     #myProgressBar {
         width: 100vw;
-        height: 5vh;
+        height: 10vh;
         display: flex;
         align-items: center;
+        position: relative;
+        bottom: 25px;
     }
     /* .musicPlayingBar {
         background-color: black;
