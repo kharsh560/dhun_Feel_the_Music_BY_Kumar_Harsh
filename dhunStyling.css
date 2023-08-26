@@ -3,6 +3,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    font-family: 'Varela Round', sans-serif;
     
 }
 
@@ -194,6 +195,19 @@ body {
 
 
 @media(min-width: 1140px) {
+    #songInfo {
+        z-index: 1;
+        position: fixed;
+        top: 84vh;
+        /* display: flex;
+        justify-content: center;
+        width: 100vw; */
+        font-family: 'Ubuntu', sans-serif;
+        font-size: larger;
+        font-weight: bolder;
+        color: rgba(255, 255, 255, 0.793);
+
+    }
     .bottomMostContainer {
         height: 5vh;
         width: 100vw;
@@ -212,6 +226,7 @@ body {
         justify-content: center;
         align-items: center;
     }
+    
     .playerButton {
         padding: 0 5px;
         height: 40px;

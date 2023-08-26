@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Dhun_FeelTheMusic</title>
+
+    <!-- ################################# CSS file linking code ################################# -->
     <link rel="stylesheet" href="dhunStyling.css">
+
+    <!-- ################################# Font Awesome linking code for icons ################################# -->
     <script src="https://kit.fontawesome.com/e7bf5cfb41.js" crossorigin="anonymous"></script>
+
+    <!-- ################################# Google Fonts linking code ################################# -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Josefin+Sans:wght@300&family=Libre+Baskerville&family=Merriweather&family=Montserrat+Subrayada&family=Montserrat:wght@500&family=Sacramento&family=Ubuntu&family=Varela+Round&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navigationBar">
         <ul class="navBarUl">
@@ -33,9 +46,9 @@
                 </div>
                 <hr>
                 <div class="songList">
-                    <p>1: Theme Song</p>
-                    <p>2: Tarse Tarse</p>
-                    <p>3: Ho Raha Hai Jo</p>
+                    <p id="0">1: Taqdeer Theme Song</p>
+                    <p id="1">2: Tarse Tarse</p>
+                    <p id="2">3: Ho Raha Hai Jo</p>
                 </div>
             </div>
         </div>
@@ -51,7 +64,7 @@
                 </div>
                 <hr>
                 <div class="songList">
-                    <p>1: Tune Jo Na Kaha</p>
+                    <p id="3">1: Tune Jo Na Kaha</p>
                 </div>
             </div>
         </div>
@@ -61,14 +74,14 @@
             <h4>Rockstar</h4>
             <div class="stylingForPhone">
                 <div class="aboutAlbum">
-                <p><b>Album:</b> Rockstar Movie</p>
-                <p><b>Year:</b> 2011</p>
-                <p><b>Singer:</b> Mohit Chauhan </p>
-            </div>
-            <hr>
-            <div class="songList">
-                <p>1: Naadan Parinde</p>
-            </div>
+                    <p><b>Album:</b> Rockstar Movie</p>
+                    <p><b>Year:</b> 2011</p>
+                    <p><b>Singer:</b> Mohit Chauhan </p>
+                </div>
+                <hr>
+                <div class="songList">
+                    <p id="4">1: Naadan Parinde</p>
+                </div>
             </div>
         </div>
         <!-- @@@@@@@@@@@@ Row-1 Column-4 @@@@@@@@@@@@ -->
@@ -77,14 +90,14 @@
             <h4>We Don't Talk Anymore</h4>
             <div class="stylingForPhone">
                 <div class="aboutAlbum">
-                <p><b>Album:</b> by Charlie Puth</p>
-                <p><b>Year:</b> 2016</p>
-                <p><b>Singer:</b> Charlie Puth & Selena Gomez</p>
-            </div>
-            <hr>
-            <div class="songList">
-                <p>1: We Don't Talk Anymore</p>
-            </div>
+                    <p><b>Album:</b> by Charlie Puth</p>
+                    <p><b>Year:</b> 2016</p>
+                    <p><b>Singer:</b> Charlie Puth & Selena Gomez</p>
+                </div>
+                <hr>
+                <div class="songList">
+                    <p id="5">1: We Don't Talk Anymore</p>
+                </div>
             </div>
         </div>
         <!-- @@@@@@@@@@@@ Row-1 Column-5 @@@@@@@@@@@@ -->
@@ -93,14 +106,14 @@
             <h4>Liger</h4>
             <div class="stylingForPhone">
                 <div class="aboutAlbum">
-                <p><b>Album:</b> Liger Movie</p>
-                <p><b>Year:</b> 2022</p>
-                <p><b>Singer:</b> Farhad Bhiwandiwala</p>
-            </div>
-            <hr>
-            <div class="songList">
-                <p>1: Attack</p>
-            </div>
+                    <p><b>Album:</b> Liger Movie</p>
+                    <p><b>Year:</b> 2022</p>
+                    <p><b>Singer:</b> Farhad Bhiwandiwala</p>
+                </div>
+                <hr>
+                <div class="songList">
+                    <p id="6">1: Attack</p>
+                </div>
             </div>
         </div>
         <!-- @@@@@@@@@@@@ Row-1 Column-6 @@@@@@@@@@@@ -->
@@ -109,14 +122,14 @@
             <h4>Lal Singh Chadda</h4>
             <div class="stylingForPhone">
                 <div class="aboutAlbum">
-                <p><b>Album:</b> Lal Singh Chadda Movie</p>
-                <p><b>Year:</b> 2022</p>
-                <p><b>Singer:</b> Arijit Singh & Shilpa Rao</p>
-            </div>
-            <hr>
-            <div class="songList">
-                <p>1: Tere Hawale</p>
-            </div>
+                    <p><b>Album:</b> Lal Singh Chadda Movie</p>
+                    <p><b>Year:</b> 2022</p>
+                    <p><b>Singer:</b> Arijit Singh & Shilpa Rao</p>
+                </div>
+                <hr>
+                <div class="songList">
+                    <p id="7">1: Tere Hawale</p>
+                </div>
             </div>
         </div>
 
@@ -127,50 +140,51 @@
     <!-- @@@@@@@@@@@@ Row-2 Column-1 @@@@@@@@@@@@ -->
     <div class="songsContainer">
         <div class="songAlbum">
-            <img src="La-Casa-De-Papel-Money-Heist-My-Life-Is-Going-OnPoster.jpeg" alt="La-Casa-De-Papel-Money-Heist-My-Life-Is-Going-On" class="songMoviePoster posterToSquare">
+            <img src="La-Casa-De-Papel-Money-Heist-My-Life-Is-Going-OnPoster.jpeg"
+                alt="La-Casa-De-Papel-Money-Heist-My-Life-Is-Going-On" class="songMoviePoster posterToSquare">
             <h4>Money Heist</h4>
             <div class="stylingForPhone">
                 <div class="aboutAlbum">
-                <p><b>Album:</b> Money Heist Movie</p>
-                <p><b>Year:</b> 2017</p>
-                <p><b>Singer:</b>  Alok & Cecilia Krull</p>
-            </div>
-            <hr>
-            <div class="songList">
-                <p>1: My Life Is Going On</p>
-            </div>
+                    <p><b>Album:</b> Money Heist Movie</p>
+                    <p><b>Year:</b> 2017</p>
+                    <p><b>Singer:</b> Alok & Cecilia Krull</p>
+                </div>
+                <hr>
+                <div class="songList">
+                    <p id="8">1: My Life Is Going On</p>
+                </div>
             </div>
         </div>
-    <!-- @@@@@@@@@@@@ Row-2 Column-2 @@@@@@@@@@@@ -->
+        <!-- @@@@@@@@@@@@ Row-2 Column-2 @@@@@@@@@@@@ -->
         <div class="songAlbum">
             <img src="BellaCiaoPoster.jpeg" alt="BellaCiao" class="songMoviePoster posterToSquare">
             <h4>Money Heist</h4>
             <div class="stylingForPhone">
                 <div class="aboutAlbum">
-                <p><b>Album:</b> Money Heist Movie</p>
-                <p><b>Year:</b> 2017</p>
-                <p><b>Singer:</b> Manu Pilas</p>
-            </div>
-            <hr>
-            <div class="songList">
-                <p>1: Bella Ciao</p>
-            </div>
+                    <p><b>Album:</b> Money Heist Movie</p>
+                    <p><b>Year:</b> 2017</p>
+                    <p><b>Singer:</b> Manu Pilas</p>
+                </div>
+                <hr>
+                <div class="songList">
+                    <p id="9">1: Bella Ciao</p>
+                </div>
             </div>
         </div>
-    <!-- @@@@@@@@@@@@ Row-2 Column-3 @@@@@@@@@@@@ -->
+        <!-- @@@@@@@@@@@@ Row-2 Column-3 @@@@@@@@@@@@ -->
         <div class="songAlbum">
             <img src="AankhonSeBatanaPoster.jpeg" alt="AankhonSeBatana" class="songMoviePoster posterToSquare">
             <h4>Aankhon Se Batana</h4>
             <div class="stylingForPhone">
                 <div class="aboutAlbum">
-                <p><b>Album:</b> By Dikshant</p>
-                <p><b>Year:</b> 2022</p>
-                <p><b>Singer:</b> Diksahnt</p>
-            </div>
-            <hr>
-            <div class="songList">
-                <p>1: Tum Aankhon Se Batana</p>
-            </div>
+                    <p><b>Album:</b> By Dikshant</p>
+                    <p><b>Year:</b> 2022</p>
+                    <p><b>Singer:</b> Diksahnt</p>
+                </div>
+                <hr>
+                <div class="songList">
+                    <p id="10">1: Tum Aankhon Se Batana</p>
+                </div>
             </div>
         </div>
         <!-- @@@@@@@@@@@@ Row-2 Column-4 @@@@@@@@@@@@ -->
@@ -179,30 +193,30 @@
             <h4>Teri Deewani</h4>
             <div class="stylingForPhone">
                 <div class="aboutAlbum">
-                <p><b>Album:</b> by Kailash Kher</p>
-                <p><b>Year:</b> 2007</p>
-                <p><b>Singer:</b> Kailash Kher</p>
-            </div>
-            <hr>
-            <div class="songList">
-                <p>1: Teri Deewani</p>
-            </div>
+                    <p><b>Album:</b> by Kailash Kher</p>
+                    <p><b>Year:</b> 2007</p>
+                    <p><b>Singer:</b> Kailash Kher</p>
+                </div>
+                <hr>
+                <div class="songList">
+                    <p id="11">1: Teri Deewani</p>
+                </div>
             </div>
         </div>
-    <!-- @@@@@@@@@@@@ Row-2 Column-5 @@@@@@@@@@@@ -->
+        <!-- @@@@@@@@@@@@ Row-2 Column-5 @@@@@@@@@@@@ -->
         <div class="songAlbum">
             <img src="MummaSongPoster.jpeg" alt="MummaSong" class="songMoviePoster posterToSquare">
             <h4>Mumma</h4>
             <div class="stylingForPhone">
                 <div class="aboutAlbum">
-                <p><b>Album:</b> By Kailash Kher</p>
-                <p><b>Year:</b> 2008</p>
-                <p><b>Singer:</b> Kailash Kher</p>
-            </div>
-            <hr>
-            <div class="songList">
-                <p>1: Mumma</p>
-            </div>
+                    <p><b>Album:</b> By Kailash Kher</p>
+                    <p><b>Year:</b> 2008</p>
+                    <p><b>Singer:</b> Kailash Kher</p>
+                </div>
+                <hr>
+                <div class="songList">
+                    <p id="12">1: Mumma</p>
+                </div>
             </div>
         </div>
 
@@ -221,16 +235,25 @@
         </div> -->
     </div>
 
-    <!-- ############################### Bottom Most Container ############################### -->
+    <!-- ############################### Song Info Container ############################### -->
 
+    <div id="songInfo">
+        <h4>Currently Playing: <span id="currentluPlayingSong"> Tarse Tarse</span></h4>
+    </div>
+
+    <!-- ############################### Bottom Most Container ############################### -->
     <div class="bottomMostContainer">
         <div class="aboutPlayer">
-            <img src="backward-solid.svg" alt="backwardButton" class="playerButton">
-            <img src="play-solid.svg" alt="playButton" class="playerButton">
-            <!-- <img src="pause-solid.svg" alt="pauseButton" class="playerButton"> -->
-            <img src="forward-solid.svg" alt="forwardButton" class="playerButton">
+            <div class="playerButtons">
+                <img src="backward-solid.svg" alt="backwardButton" class="playerButton" id="backward">
+                <img src="play-solid.svg" alt="playButton" class="playerButton" id="playPause">
+                <!-- <img src="pause-solid.svg" alt="pauseButton" class="playerButton"> -->
+                <img src="forward-solid.svg" alt="forwardButton" class="playerButton" id="forward">
+            </div>
         </div>
-        <input type="range" id="myProgressBar" min="0" max="100">
+        <input type="range" id="myProgressBar" min="0" value="0" max="100">
     </div>
 </body>
+<script src="dhunFunctioning.js"></script>
+
 </html>
